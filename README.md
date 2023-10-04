@@ -1,10 +1,14 @@
 # clone-tabnews <!-- omit in toc -->
 
-Implementação do https://www.tabnews.com.br para o https://curso.dev
+Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 
-## Notas
+- [1. Notas](#1-notas)
+  - [1.1. Node](#11-node)
+  - [1.2. Git](#12-git)
 
-### Node
+## 1. Notas
+
+### 1.1. Node
 
 1. `node -v`, `docker -v`, `nvm -v`, `nvm ls`, `nvm install lts/hydrogen`, `nvm --help`, `nvm alias default`
 2. npm init
@@ -13,12 +17,12 @@ Implementação do https://www.tabnews.com.br para o https://curso.dev
 5. `npm install react-dom@18.2.0`
 6. `npm run dev`
 
-### Git
+### 1.2. Git
 
 1. `git log`, `git log --stat`
 2. .gitignore
 3. `git log --oneline`
 4. `git add`
-4. `git commit --amend`
-5. `git commit -m`
-6. `git push`
+5. `git commit --amend`
+6. `git commit -m`
+7. `git push`
