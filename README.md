@@ -5,10 +5,10 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 - [1. Notas](#1-notas)
   - [1.1. Node](#11-node)
   - [1.2. Git](#12-git)
-  - [1.3, Vercel](#13-vercel)
+  - [1.3. 1.3, Vercel](#13-13-vercel)
 - [2. Desenvolvimento](#2-desenvolvimento)
   - [2.1. Níveis de organização de tarefas](#21-níveis-de-organização-de-tarefas)
-  - [](#)
+  - [2.2. Issues e Milestones no Github](#22-issues-e-milestones-no-github)
 
 ## 1. Notas
 
@@ -31,7 +31,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 6. `git commit -m`
 7. `git push`
 
-### 1.3, Vercel
+### 1.3. 1.3, Vercel
 
 1. Criar uma conta e fazer ela `olhar` para o seu repositório no Github. Deste modo, toda vez que houver um commit, ela atualiza.
 2. O branch `main` é o principal, cada branch que você criar, a Vercel cria um novo ambiente, o que pode ser usado para testar.
@@ -44,4 +44,4 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 2. Quadro Kanban para lembrar as tarefas do grupo
 3. Github ou Trello
 
-### 
+### 2.2. Issues e Milestones no Github
