@@ -8,6 +8,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
   - [1.3, Vercel](#13-vercel)
 - [2. Desenvolvimento](#2-desenvolvimento)
   - [2.1. Níveis de organização de tarefas](#21-níveis-de-organização-de-tarefas)
+  - [](#)
 
 ## 1. Notas
 
@@ -42,3 +43,5 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 1. Papel escrito para lembrar as tarefas individuais
 2. Quadro Kanban para lembrar as tarefas do grupo
 3. Github ou Trello
+
+### 
