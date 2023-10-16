@@ -11,6 +11,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
   - [2.2. Issues e Milestones no Github](#22-issues-e-milestones-no-github)
 - [3. DNS - Domain Name System](#3-dns---domain-name-system)
 - [4. Testes Automatizados](#4-testes-automatizados)
+- [5. Banco de Dados](#5-banco-de-dados)
 
 ## 1. Notas
 
@@ -60,3 +61,30 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 8. [Registro .br](https://www.registro.br/)
 
 ## 4. Testes Automatizados
+
+## 5. Banco de Dados
+
+1. Escolher DBMS (MySQL, PostgresSQL, MongoDB, etc.)
+2. Escolher Query
+3. Como executar Migrations
+4. Relacional (SQL) vs Não Relacional (NoSQL)
+5. Armazenamento de documentos, chave-valor
+6. Série temporal, espacial.
+7. Lambas da AWS
+8. Postgres: pg
+9. ORM
+10. Migrations: node-pg-migrate
+11. Docker `docker --version`
+12. Docker Compose `docker-compose --version`
+13. Mailcatcher
+14. Dockerfile -> Compila e vira uma imagem. Container é uma imagem rodando. Toda vez que for levantado, é a mesma coisa que está rodando.
+15. Imagem oficial do postgres no hub.docker.com
+16. `docker compose up`
+17. `docker ps --all`
+18. `docker logs clone-tabnews-database-1`
+19. Cliente Postgres linha de comando: psql: `sudo apt install postgresql-client`
+20. `psql --host=localhost --username=postgres --port=5432`
+21. ports na configuração.
+22. `docker compose up -d --force-recreate`
+23. `docker compose down`
+24. `docker compose --file infra/compose.yaml up -d`
