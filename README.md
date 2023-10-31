@@ -12,6 +12,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 - [3. DNS - Domain Name System](#3-dns---domain-name-system)
 - [4. Testes Automatizados](#4-testes-automatizados)
 - [5. Banco de Dados](#5-banco-de-dados)
+- [6. Variáveis de Ambiente](#6-variáveis-de-ambiente)
 
 ## 1. Notas
 
@@ -62,6 +63,8 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 
 ## 4. Testes Automatizados
 
+1. `npm run test:watch`
+
 ## 5. Banco de Dados
 
 1. Escolher DBMS (MySQL, PostgresSQL, MongoDB, etc.)
@@ -88,3 +91,11 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 22. `docker compose up -d --force-recreate`
 23. `docker compose down`
 24. `docker compose --file infra/compose.yaml up -d`
+25. Client `pg`
+26. `npm install pg@8.11.3`
+
+## 6. Variáveis de Ambiente
+
+1. Arquivo .env
+2. JavaScript: `process.env.VAR`
+3. compose.yaml:     `env_file: \n - ../.env`
