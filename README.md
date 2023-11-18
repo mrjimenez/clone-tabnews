@@ -14,6 +14,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 - [5. Banco de Dados](#5-banco-de-dados)
 - [6. Variáveis de Ambiente](#6-variáveis-de-ambiente)
 - [7. Fazer ou não commit do `.env`?](#7-fazer-ou-não-commit-do-env)
+- [8. jsconfig.json (paths absolutos)](#8-jsconfigjson-paths-absolutos)
 
 ## 1. Notas
 
@@ -105,3 +106,5 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 
 - A maioria vai dizer que não, mas a Vercel fala que sim pois essas variáveis ganham valores default.
 - Tudo que for colocado em `.env`, ou `.env.production` ou `.env.development` tem menor precedência do que o que estiver definido diretamente na Vercel.
+
+## 8. jsconfig.json (paths absolutos)
