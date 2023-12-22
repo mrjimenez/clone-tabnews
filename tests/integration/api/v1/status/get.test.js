@@ -12,20 +12,39 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(responseBody.updated_at).toEqual(parsedUpdatedAt);
   // console.log(parsedUpdatedAt);
 
+  // Dependencies
+  expect(responseBody.dependencies).toBeDefined();
+  const dependencies = responseBody.dependencies;
+
   /* postgres_version */
-  expect(responseBody.postgres_version).toBeDefined();
-  const postgres_version = Number(responseBody.postgres_version.split(" ")[1]);
-  expect(postgres_version).toBeGreaterThanOrEqual(16);
+  expect(dependencies.database.version).toBeDefined();
+  // const database_version = dependencies.database.version.split(" ")[1];
+  // expect(database_version).toEqual("16.0");
+  // const database_version_number = Number(database_version);
+  expect(dependencies.database.version).toEqual("16.0");
+  const database_version_number = Number(dependencies.database.version);
+  expect(database_version_number).toBeGreaterThanOrEqual(16);
 
   /* postgres_connections_maximum_number */
-  expect(responseBody.postgres_max_connections).toBeDefined();
-  const postgres_max_connections = Number(responseBody.postgres_max_connections);
-  expect(postgres_max_connections).toStrictEqual(expect.any(Number));
-  expect(postgres_max_connections).toBeGreaterThanOrEqual(0);
+  expect(dependencies.database.max_connections).toBeDefined();
+  const database_max_connections = Number(dependencies.database.max_connections);
+  expect(database_max_connections).toStrictEqual(expect.any(Number));
+  expect(database_max_connections).toBeGreaterThanOrEqual(0);
   
   /* postgres_connections_used */
-  expect(responseBody.postgres_used_connections).toBeDefined();
-  const postgres_used_connections = Number(responseBody.postgres_max_connections);
-  expect(postgres_used_connections).toStrictEqual(expect.any(Number));
-  expect(postgres_used_connections).toBeGreaterThanOrEqual(0);
+  expect(dependencies.database.opened_connections).toBeDefined();
+  const database_opened_connections = dependencies.database.opened_connections;
+  expect(database_opened_connections).toStrictEqual(expect.any(Number));
+  expect(database_opened_connections).toBeGreaterThanOrEqual(1);
+  expect(database_opened_connections).toEqual(1);
 });
+
+/* test("Teste de SQL injection", async () => {
+  // const response = await fetch("http://localhost:3000/api/v1/status?databaseName=local_db");
+  // const injection = "local_db";
+  const injection = "local_db'; SELECT pg_sleep(4); --";
+  const request = `http://localhost:3000/api/v1/status?databaseName=${injection}`;
+  const response = await fetch(request);
+  expect(response.status).toBe(200);
+}); */
+ 
