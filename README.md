@@ -15,6 +15,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 - [6. Variáveis de Ambiente](#6-variáveis-de-ambiente)
 - [7. Fazer ou não commit do `.env`?](#7-fazer-ou-não-commit-do-env)
 - [8. jsconfig.json (paths absolutos)](#8-jsconfigjson-paths-absolutos)
+- [9. Migrations](#9-migrations)
 
 ## 1. Notas
 
@@ -108,3 +109,10 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 - Tudo que for colocado em `.env`, ou `.env.production` ou `.env.development` tem menor precedência do que o que estiver definido diretamente na Vercel.
 
 ## 8. jsconfig.json (paths absolutos)
+
+## 9. Migrations
+
+1. Proibido alterações manuais
+2. Criar um arquivo de migração
+3. "up" para fazer alterações
+4. "down" para desfazer alterações
