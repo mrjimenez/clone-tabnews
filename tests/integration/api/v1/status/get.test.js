@@ -8,7 +8,7 @@ test("GET to /api/v1/status should return 200", async () => {
   /* updated_at */
   expect(responseBody.updated_at).toBeDefined();
   new Date(responseBody.updated_at).toISOString();
-  parsedUpdatedAt = new Date(responseBody.updated_at).toISOString();
+  const parsedUpdatedAt = new Date(responseBody.updated_at).toISOString();
   expect(responseBody.updated_at).toEqual(parsedUpdatedAt);
   // console.log(parsedUpdatedAt);
 

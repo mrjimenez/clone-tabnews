@@ -116,3 +116,5 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 2. Criar um arquivo de migração
 3. "up" para fazer alterações
 4. "down" para desfazer alterações
+5. npm i @types/jest -D
+6. "down" quase nunca é usado. Why rollback when you can always roll forward?
