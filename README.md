@@ -122,4 +122,8 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 
 ## 10. Bug na migrations
 
-- curl -s https://marcelo-jimenez.com.br/api/v1/status | python3 -m json.tool
+- Reformatar com python
+
+```bash
+curl -s https://marcelo-jimenez.com.br/api/v1/status | python3 -m json.tool
+```
