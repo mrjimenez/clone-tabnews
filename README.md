@@ -16,6 +16,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 - [7. Fazer ou não commit do `.env`?](#7-fazer-ou-não-commit-do-env)
 - [8. jsconfig.json (paths absolutos)](#8-jsconfigjson-paths-absolutos)
 - [9. Migrations](#9-migrations)
+- [10. Bug na migrations](#10-bug-na-migrations)
 
 ## 1. Notas
 
@@ -118,3 +119,7 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 4. "down" para desfazer alterações
 5. npm i @types/jest -D
 6. "down" quase nunca é usado. Why rollback when you can always roll forward?
+
+## 10. Bug na migrations
+
+- curl -s https://marcelo-jimenez.com.br/api/v1/status | python3 -m json.tool
