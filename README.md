@@ -127,3 +127,9 @@ Implementação do <https://www.tabnews.com.br> para o <https://curso.dev>
 ```bash
 curl -s https://marcelo-jimenez.com.br/api/v1/status | python3 -m json.tool
 ```
+
+- Reformatar com jq
+
+```bash
+watch -n 1 'curl -s https://marcelo-jimenez.com.br/api/v1/status | jq'
+```
